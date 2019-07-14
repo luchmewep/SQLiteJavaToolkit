@@ -31,12 +31,12 @@ public class sqlitecruddemo {
 	public static void main(String[] args) throws SQLException {
 		
 		db = new SqliteToolkit("C:\\Users\\jsluc\\Desktop\\students.db");
-		db.testConnection(); //TEST FIRST THE CONNECTION BEFORE ANYTHING ELSE!
+//		db.testConnection(); //TEST FIRST THE CONNECTION BEFORE ANYTHING ELSE!
 		
 		/*
 		 * (a) Simple INSERT algorithm
 		 */
-//		sql = "insert into stud_info values (null, 'Pedro', 'Penduko')";
+//		sql = "insert into stud_info values (null, 'Juana', 'Batumbakal')";
 //		pst = db.getPST(sql);
 //		success = db.executePST(pst);
 //		if(success) {
@@ -67,7 +67,7 @@ public class sqlitecruddemo {
 		 * (b) Simple UPDATE algorithm
 		 */
 		
-//		sql = "update countries set country_name = 'Republic of China' where country_id = 1";
+//		sql = "update stud_info set stud_fname = 'James Carlo' where stud_id = 5";
 //		pst = db.getPST(sql);
 //		success = db.executePST(pst);
 //		if(success) {
@@ -80,7 +80,7 @@ public class sqlitecruddemo {
 		 * (c) Simple DELETE algorithm
 		 */
 		
-//		sql = "delete from stud_info where stud_lname = 'Luchavez'";
+//		sql = "delete from stud_info where stud_fname = 'James Carlo'";
 //		pst = db.getPST(sql);
 //		success = db.executePST(pst);
 //		if(success) {
